@@ -1,8 +1,21 @@
-<ul >
-  {{#events}}
-    <li>
-        <h2>{{ title }}</h2>
-        <p>{{ description }}</p>
-    </li>
-  {{/events}}
-</ul>
+<div class="row">
+    {{#events}}
+        <div class="card bg-light mb-1" style="width: 18rem; margin:20px;">
+            <!--<img class="card-img-top" src="" alt="Card image cap">-->
+            <div class="card-header">
+                {{title}}
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{description}}</p>
+            </div>
+            <div class="d-flex justify-content-around align-middle">
+                <span class="align-middle">
+                    <a href="#">-</a>
+                    0 Likes
+                    <a href="#">+</a>
+                </span>
+                <a href="#" class="btn">Comment</a>
+            </div>    
+        </div>
+    {{/events}}
+</div>

@@ -6,20 +6,23 @@
   <title>Team Cloud Bursters Website</title>
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
   <div>
-      <h1>Welcome to Cloud Bursters application</h1>
-    {{{body}}}
+      <h1 class="title">Welcome to Cloud Bursters application</h1>
+    <div class="container">
+        {{{body}}}
+    </div>
 </div>
-<div>
+<div class="form-group">
   <h2>Add an event</h2>
     <form action="/event" method="post">
-       title: <input name="title" type="text" /> <br />
-       description: <input name="description" type="text" /> <br />
+       <label>Title:</label> <input name="title" type="text" /> <br />
+       <label>Description:</label> <input name="description" type="text" /> <br />
        <br />
-        <input type="submit" name="submit" value="submit" />
+        <input type="submit" class="btn btn-primary" name="submit" value="submit" />
     </form>
-  </div>
+</div>
 </body>
 </html>
